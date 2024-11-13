@@ -1,0 +1,16 @@
+---
+format: pdf
+editor: visual
+---
+## David Sneddon
+### ECON 545 Project Proposal
+
+It's an old story. Young people full of optimism and dreams of prosperity leave home and head to the big city to make their dreams a reality. In essence, I want to examine this trope, does proximity to a city have a statistically significant effect on Intergenerational Elasticity? There is a treasure trove of data available from the US Census bureau to develop an econometric model. I will use metropolitan and micropolitan statistical area data and county level data for testing.
+
+There will likely be a need for more than one regressor but at the simplest level the model being tested is:
+
+$$
+\widehat{IGE} = \hat{\beta_0} + arsinh(\hat{\beta_1}(d)) + arsinh(\hat{\beta_2}(\Delta\rho)) + \hat{\beta_3}(d \times \Delta\rho) + \varepsilon
+$$
+
+Where $d$ is the the distance in kilometers between a county and the most population dense county in the statistical area using the haversine formula and $\Delta\rho$ is the difference between the two county population densities. I'm going use inverse hyperbolic sine to approximate a log-log regression as I plan to use centroids for each county for distance measuring and I do not want to exclude the most dense counties from the analysis. My hypothesis there will be a positive relationship between $d$ and $IGE$ and thus intergenerational mobility will decrease with greater distance distance from the city. I will assume that agglomeration results in higher incomes.

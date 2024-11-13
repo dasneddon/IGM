@@ -1,0 +1,9 @@
+.Rproj.user
+*.zip
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+.DS_Store
+play*
+data
