@@ -138,7 +138,7 @@ $$ {#eq-model}
 
 ### Geographic Data
 
-Raw county-level geographic data is provided by the `tigris` package using `tigris::counties()` [@tigris]. County centroids are then calculated using the `sf` package's `sf::st_centroid()`. Latitude and longitudes were extracted using `sf::st_coordinates()` [@sfpkg]. County listings and FIPS codes were taken from the core based statistical areas (CBSAs), metropolitan divisions, and combined statistical areas (CSAs) data set provided by the @msafile. Underlying code and data has been made available on GitHub [@github-repo] and the appendix.
+Raw county-level geographic data is provided by the `tigris` package using `tigris::counties()` [@tigris]. County centroids are then calculated using the `sf` package's `sf::st_centroid()`. Latitude and longitudes were extracted using `sf::st_coordinates()` [@sfpkg]. County listings and FIPS codes were taken from the core based statistical areas (CBSAs), metropolitan divisions, and combined statistical areas (CSAs) data set provided by the @msafile. Underlying code has been made available on GitHub [@github-repo] and the appendix. The cleaned data is exclusively available on GitHub [@github-repo]
 
 ### Population Densities
 
@@ -194,14 +194,19 @@ There is also a question on how significant of an effect this covariate would ha
 
 ## Policy Recommendations
 
-It would appear that there is significant inequality of opportunity in rural areas as opposed to urban centers. At the same time there is significant inequality of *result* in urban areas, whereas in rural areas income inequality is far less pronounced. This is well supported by the literature and the empirical analysis conducted for this paper adds to that support.
+There is significant inequality of opportunity in rural areas as opposed to urban centers. At the same time there is significant inequality of *result* in urban areas, whereas in rural areas income inequality is far less pronounced. This is well supported by the literature and the empirical analysis conducted for this paper adds to that support.
 
-### P
-d
+With the rise of WFH and if the trend indicated by @bloom and @mckinsey2021future holds, public investment in education in rural areas may see a greater return on investment than the work by @ahsan2020rural may suggest, at least in the long-run. It is also entirely possible that the benefits of a completely online University education could play a part as well [^onledu]. Significant public investment in K-12 education in rural areas, albeit without the economy of scale benefits enjoyed within urban areas could bear fruit, especially considering the work done by @ahsan2020rural. Public investment in online education is also a strong option for both secondary and tertiary levels. Adoption of the online education format could also benefit the next generation of workers who may find that their jobs are done in the same fashion, especially in higher paying fields.
+
+An argument that those in rural areas should simply move closer to a city lacks merit and is not a serious solution to intergenerational mobility in rural areas. For starters, it ignores the costs of moving away from family and into an area with greater income inequality to start with. Transplants would also be competing with those that are accustomed to life in an urban setting perhaps contributing to even greater income inequality in urban areas. In addition this further drains who are perhaps the more talented individuals away from rural communities exacerbating the lack of investment and opportunity in those areas further. On the other hand, it may remain attractive to policymakers at the state and federal levels to encourage movement into cities so public investment dollars can benefit from economies of scale. Municipal policymakers would likely balk at this proposition, however, as the demand for low skilled work continues to wane.
+
+[^onledu]: Author's note - I am completing my university education, to include graduate education, fully online as of this writing. While there are universities accessible to me, this format is far more convenient for balancing the coursework with family and career responsibilities.
 
 ## Conclusion
 
-Overall, it would appear that proximity to an urban area does correlate to relative mobility. This is supported by the high degree of significance in the regression. There are undoubtedly more opportunities for income advancement in urban centers as opposed to rural areas. In addition to being highly intuitive, the literature strongly support this assertion.
+Overall, it would appear that proximity to an urban area does positively correlate to relative mobility. This is supported by the high degree of significance in the regression. There are undoubtedly more opportunities for income advancement in urban centers as opposed to rural areas. In addition to being highly intuitive, the literature strongly support this assertion.
+
+I would be remiss if I didn't make clear that there is likely not a pareto-efficient solution to this gradient. Rural investment does not benefit from economies of scale in the same manner as urban areas. However, the efficacy of investing in K-12 education and in particular online education would make for relevant further research. 
 
 {{< pagebreak >}}
 
@@ -214,10 +219,39 @@ Overall, it would appear that proximity to an urban area does correlate to relat
 
 {{< pagebreak >}}
 
-# Appendix {#appendix}
+# Appendix
 
-## Code
+## Data
+
+All data files that were imported as csv files and the clean data file used in analysis are available on GitHub [@github-repo] [^datas]
+
+## R Code
+
+The R script used for this project is also available on GitHub [@SneddonIGMR] [^rscript]
+
+### Packages Used
+
+This paper was written and formatted using apaquarto [@apaquartocite] and Quarto [@quarto_2024]. Some of the functionality of these packages may be needed if an attempt is made at replication.
+
+### Within script IGM.R:
+
+`tigris` [@tigris]\
+`sf` [@sfpkg]\
+`dplyr` [@dplyrc]\
+`censusapi` [@census-api]\
+`units` [@unitsc]\
+`geosphere` [@geospherecite]\
+`fixest` [@fixestcite]\
+`readr` [@readrc]
+
+### IGM.R
 
 ```{r}
 cat(readLines("IGM.R"), sep="\n")
 ```
+
+[^rscript]: https://github.com/dasneddon/IGM/blob/main/IGM.R
+[^datas]: https://github.com/dasneddon/IGM
+
+
+
