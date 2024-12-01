@@ -9,8 +9,6 @@ library(fixest)
 options(scipen=999)
 library(readr)
 
-
-
 ###IMPORT GEOGRAPHIC DATA
 
 counties <- counties()
@@ -69,9 +67,13 @@ cbsa$RS <- cbsa$RS*100
 
 ##REGRESSION
 
-reg1 <- feols(RS ~ asinh(distance) | State.Name, 
+reg1 <- feols(RS ~ asinh(distance) | densest, 
               data = cbsa, vcov = "hetero")
 
-summary(reg1)
+etable(reg1)
 
+#CREATE A CSV FILE FOR cbsa FOR PUBLIC REVIEW
 
+cbsa$geometry <- NULL #NECCESSARY FOR CLEAN OUTPUT
+
+write_csv(cbsa, "cbsa.csv")
