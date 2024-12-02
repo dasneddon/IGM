@@ -38,7 +38,7 @@ format:
     nocorrespondence: true
     course: "ECON 545: Urban Economics"
     professor: "Dr. Rex Sitti"
-    duedate: December 2, 2024
+    duedate: December 1, 2024
     suppress-abstract: true
     suppress-short-title: true
     suppress-author-note: true
@@ -52,23 +52,21 @@ header-insert: |
   \doublespacing
 ---
 
-# Intoduction
+# Introduction
 
-It's an old story. Young people full of optimism and dreams of prosperity leave home and head to the big city to make their dreams a reality. I would like to examine this trope, does proximity to a city have a statistically significant effect in intergenerational mobility? Prior literature [@chetty_lop], opines rather than a land of opportunity, the U.S. is "better described as a collection of societies, some of which are 'lands of opportunity'" While inequality of intergenerational mobility across demographic lines has been well documented in the literature, I would like to examine how geographic location alone affects mobility.\
+It's an old story. Young people with optimism and dreams of prosperity leave home and head to the big city to make their dreams a reality. I want to examine this trope: Does proximity to a city have a statistically significant effect on intergenerational mobility? @chetty_lop, opines that rather than a land of opportunity, the U.S. is "better described as a collection of societies, some of which are 'lands of opportunity'" While inequality across demographic lines has been well documented in the literature, I would like to examine how geographic location alone affects intergenerational mobility.\
 
-My interest in this starts with a purely anecdotal personal observation. I spent a combined ten years as a field sales representative and sales manager for a tobacco company. You see all kinds in this line of work and my travels took me into every sort of neighborhood, both rural and urban, wealthy and impoverished, and everything in between. The lions share of our B2B clients were convenience stores, and nearly every neighborhood in America has a convenience store. One tends to get a sense of the mindset of the managers and clerks that work in these stores. In the urban setting, typically the owners or members of their family are running their stores, often times from open to close. When employees are hired, they typically change from one month to the next. Jobs in these stores are not coveted by the urban labor market.\
+My interest in this topic starts with a purely anecdotal personal observation. I spent a combined ten years as a field sales representative and sales manager for a tobacco company and you see all kinds in this line of work. My travels took me into every sort of neighborhood, rural and urban, wealthy and impoverished, and everything in between. The lion's share of our B2B clients were convenience stores, and nearly every neighborhood in America has a convenience store. One tends to get a sense of the mindset of the managers and clerks that work in these stores. In the urban setting, typically the owners or members of their family are running their stores, often times from open to close. When employees are hired, they typically change from one month to the next. Jobs in these stores are not coveted by the urban labor market.\
 
-Contrast this to the rural setting. Many of these stores are corporate owned and those employed there tend to be there for a relatively long time. The store managers are dedicated to what they are doing, take the job seriously and generally have a no-nonsense attitude. One gets a sense, especially in extremely rural areas, that a manager in one of these stores has a vested interest in the store's success. In simple terms, these jobs are viewed as "good jobs." This stands to reason, as rural towns have limited work opportunities as opposed to their urban counterparts. It was not uncommon to see a grandmother be store manager, while her daughter works in the store as a clerk. It was also not uncommon to see other family members of the store manager visit regularly to get advice, arrange child-care, borrow gas money, borrow the car, etc. I got the sense that to be a store manager for the local gas-station was stability for a family, I also got the sense that her children weren't leaving town anytime soon. The further away from a metro area I would get, the more I noticed this phenomenon.
+Contrast this to the rural setting. Many of these stores are corporate owned and those employed there tend stay for a relatively long time. The store managers are dedicated to what they are doing, take the job seriously and generally have a no-nonsense attitude. I got the sense that a managers had a vested interest in the store's success, especially in the extremely rural areas. In simple terms, these jobs are viewed as "good jobs." This stands to reason, as rural towns have limited work opportunities as opposed to their urban counterparts. It was not uncommon to see a grandmother be the store manager, while her daughter works in the store as a clerk. It was also not uncommon to see the manager's family members visit regularly to get advice, arrange child-care, borrow gas money, borrow the car, etc. To be a store manager for the local gas-station was stability for a family, I got the sense that her children weren't leaving town anytime soon. The further away from a metro area I would get, the more I noticed this phenomenon.
 
-This also begs the question: How is distance to a city affecting intergenerational mobility? While more people may on average be willing endure longer commute times for work, this endurance isn't infinite and the literature suggests that this willingness to endure is waning. Today, workers will either move closer to more lucrative opportunities, or they will make-do with relatively limited opportunities closer to home. It would appear that workers since the end of the nineteenth century have opted for the former. By 1920 over half the population of the United States lived in a city, and by 2010 only 19% lived in a rural area, with 14% living in a non-metro county [@Slack2020]. In this context, access to the resources and labor opportunity that a city provides continues to be attractive to workers, even in a post COVID-19 world, albeit with a caveat that this relationship may be increasingly strained.\
+This also begs the question: How is distance to a city affecting intergenerational mobility? While more people may on average be willing endure longer commute times for work, this endurance isn't infinite and the literature suggests that this willingness to endure is waning. Today, workers will either move closer to more lucrative opportunities, or they will make-do with relatively limited opportunities closer to home. It would appear that workers since the end of the nineteenth century have opted for the former. By 1920 over half the population of the United States lived in a city, and by 2010 only 19% lived in a rural area, with 14% living in a non-metro county [@Slack2020]. In this context, access to the resources and labor opportunities that a city provides continues to be attractive to workers, even in a post COVID-19 world, albeit with a caveat that this relationship may be increasingly strained.\
 
-My hypothesis is that there will be a negative relationship between the distance from the most densely populated county to other counties within an MSA and the measure of relative mobility. The null hypothesis is that there is no relationship between distance and mobility. Another alternative is that there is, in fact, a positive relationship.\
-
-{{< pagebreak >}}
+My hypothesis is that there will be a positive relationship between the proximity to the most densely populated county to other counties within an MSA and the measure of relative mobility. The null hypothesis is that there is no relationship between distance and mobility. Another alternative is that there is, in fact, a negative relationship.\
 
 # Literature Review
 
-## Rank-Rank Slope as a measure of mobility
+## Rank-Rank Slope as a Measure of Mobility
 
 The importance of location for intergenerational mobility is well documented in the literature. @chetty_lop offers a granular analysis of the U.S. geography, using measurement methods largely derived from @dahl2008, and their treatment on the data from income tax returns and W-2 forms made available from the IRS was replicated in 2022, offering a post COVID-19 sample to test [@DVN/NALG3E_2022]. Their analysis tests residential segregation, income inequality, quality of schooling, social capital, and family stability. They reject the null hypothesis on each of these covariates.\
 @chetty_lop uses what they call rank-rank specification. This is derived from a simple correlation of the percentile rank of a child's income and their parents' income yielding a coefficient for a single variable OLS regression.\
@@ -95,21 +93,21 @@ The inherent limitations of @eq-IGE are expounded upon by @dahl2008. In their ec
 
 ## Geographical Variation in Mobility
 
-The work done by @connorstorper examines geographical variation in social mobility. They split the country into six regions: Northeast, Midwest, West, South, Southern Plains & Mountain, and Northern Plains & Mountain. They contrast the social mobility among these regions. They find that lower income areas show some of the highest degrees of social mobility with a caveat. The high degrees of social mobility from parent to child is overstated considering the gains made by children that *leave* the poorer region. The largest gains were found to be in the Northern Plains region among children from rural communities. Indeed the rural segments of *all* regions outperformed their urban counterparts, which is explained by gains made by those that leave, not those that stayed. This lends promise to rejecting the null hypothesis.
+The work done by @connorstorper examines geographical variation in social mobility. They split the country into six regions: Northeast, Midwest, West, South, Southern Plains & Mountain, and Northern Plains & Mountain. They contrast the social mobility among these regions. They find that lower income areas show some of the highest degrees of social mobility with a caveat: The high degrees of social mobility from parent to child is overstated considering the gains made by children that *leave* the poorer region. The largest gains were found to be in the Northern Plains region among children from rural communities; indeed the rural segments of *all* regions outperformed their urban counterparts, which is explained by gains made by those that left, not those that stayed. This lends promise to rejecting the null hypothesis.
 
 ## Work from Home Trends
 
-According to the @USCensus2023, commuting times are steadily on the rise again as the effects of the COVID-19 pandemic wane. @mckinsey2021future predicted that that work from home (WFH) trends would be persistent after the pandemic ended with up to 25% of the workforce being deployed in an entirely work from home or hybrid environment. The data are promising for WFH and there doesn't appear to be evidence for lost productivity for WFH accompanying a drop in turnover where at least hybrid models are implemented [@bloom]. Immediately before the pandemic 9.8% of workers had a commute time of over 60 minutes. While this dropped to a low of 7.7% as lock downs were enforced and work-from-home became more en-vogue [^2], the rate rose again to 8.9% by the end of 2023 [@USCensus2023a].
+According to the @USCensus2023, commuting times are steadily on the rise again as the effects of the COVID-19 pandemic wane. @mckinsey2021future predicted that that work from home (WFH) trends would be persistent after the pandemic ended; with up to 25% of the workforce being deployed in an entirely work from home or hybrid environment. The data are promising for WFH and there doesn't appear to be evidence for lost productivity. In cases where at least hybrid models were implemented, there was also a drop in turnover [@bloom]. Immediately before the pandemic 9.8% of workers had a commute time of over 60 minutes. While this dropped to a low of 7.7% as lock downs were enforced and work-from-home became more en-vogue [^2], the rate rose again to 8.9% by the end of 2023 [@USCensus2023a].
 
 [^2]: Rising from 5.7% in 2019 to 17.9% in 2021, falling back to 13.8% by the end of 2020 [@USCensus2023a]
 
-Recent literature that suggests that return to office (RTO) policies are being implemented regardless of the data supporting a WFH model. Senior managers may blame poor performance on WFH policies in spite of evidence to the contrary, however not without a measure of regret after implementing [@ding2024rto]. Therefore, this trend may not hold long-term as employees continue to demand WFH and hybrid models and the costs of implementing RTO, including the damage to employee morale, continue to manifest without an accompanying improvement in productivity.\
+Recent literature that suggests that return to office (RTO) policies are being implemented regardless of the data supporting a WFH model. Senior managers may blame poor performance on WFH policies in spite of evidence to the contrary, however not without a measure of regret after implementing [@ding2024rto]. Therefore, this trend may not hold long-term as employees continue to demand WFH and hybrid models. The costs of implementing RTO, including the damage to employee morale, will also continue to manifest, all without an accompanying improvement in productivity.\
 
 ## The Great Gatsby Curve
 
-In his work, Miles @corak_income_2013 suggests that areas of high income inequality negatively effect intergenerational mobility, developing the so-called Great Gatsby Curve. In @corak2010economic the authors tie in mental and physical health, specifically preventative healthcare into educational outcomes. They also hone in on educational attainment by mothers having a pronounced impact on the education outcomes of their children. They do, however, stop short of drawing a causal inference for the purpose of policy recommendation and resource distribution [@corak_income_2013].
+In his work, Miles @corak_income_2013 suggested that high income inequality negatively effects intergenerational mobility, developing the so-called Great Gatsby Curve. In @corak2010economic the authors tie in mental and physical health, specifically preventative healthcare into educational outcomes. They also hone in on educational attainment by mothers having a pronounced impact on the education outcomes of their children. They do, however, stop short of drawing a causal inference for the purpose of policy recommendation and resource distribution [@corak_income_2013].
 
-In identifying causes of income inequality, @corak_income_2013 opines: "the American education system does not promote mobility to the extent that it could because its educational spending is more likely to benefit the relatively well-to-do." He finds based on @oecd2011education data that while the United States spends the most per pupil of any country in the world, this is primarily spent on tertiary education. @oecd2012economic succinctly notes as identified by @corak_income_2013: "Currently the United States is one of only three OECD countries that on average spend less on students from disadvantaged backgrounds than on other students. . . . Moreover, the most able teachers rarely work in disadvantaged schools in the United States, the opposite of what occurs in countries with high-performing education systems."
+In identifying causes of income inequality, @corak_income_2013 opines: "the American education system does not promote mobility to the extent that it could because its educational spending is more likely to benefit the relatively well-to-do." He finds, based on @oecd2011education data, that while the United States spends the most per pupil of any country in the world, this is primarily spent on tertiary education. @oecd2012economic succinctly notes as identified by @corak_income_2013: "Currently the United States is one of only three OECD countries that on average spend less on students from disadvantaged backgrounds than on other students. . . . Moreover, the most able teachers rarely work in disadvantaged schools in the United States, the opposite of what occurs in countries with high-performing education systems."
 
 ## Rural-Urban Divide
 
@@ -119,11 +117,10 @@ On the other hand, in their working paper @ahsan2020rural posit: "The returns to
 
 @ahsan2020rural conclude that the quality of investment in schooling, which tends to fall behind investment in urban schooling, can serve as a counter-balance to a home life and family background less conducive to educational attainment. They go on to cite peer interactions in a higher performing school as the primary counterweight to family influence. They also strongly suggest that this should influence policy recommendations for investment in rural schools.
 
-{{< pagebreak >}}
 
 # Method
 
-I will be testing whether the distance between the most populous county in a Metropolitan Statistical Area (MSA) and other counties within will have a statistically significant impact on relative mobility. Data analysis is conducted using R [@arr] within the RStudio environment [@RStudio]. All "packages" mentioned should be understood to be R packages.
+I will be testing whether the distance between the most populoulation dense county in a Metropolitan Statistical Area (MSA) and other counties within will have a statistically significant impact on relative mobility. Data analysis is conducted using R [@arr] within the RStudio environment [@RStudio]. All "packages" mentioned should be understood to be R packages.
 
 **Let:**\
 $M_c : \text{Rank-rank slope measuring relative mobility in a county}$\
@@ -142,7 +139,7 @@ Raw county-level geographic data is provided by the `tigris` package using `tigr
 
 ### Population Densities
 
-It was necessary to obtain population densities in each county in order to find the most populous counties within a CSA. These data were obtained by calculating the densities using population data obtained from the 2020 decennial census by the @census2020 using the `censusapi` package, courtesy of @census-api and divided by the county land area extrapolated from the spatial data provided by `tigris::counties()` [@tigris] and calculated using `sf::st_area()` [@sfpkg].
+It was necessary to obtain population densities in each county in order to find the most populous counties within a CSA. These data were obtained by calculating the densities using population data obtained from the 2020 decennial census by the @census2020 using the `censusapi` package [@census-api] and divided by the county land area extrapolated from the spatial data provided by `tigris::counties()` [@tigris] and calculated using `sf::st_area()` [@sfpkg].
 
 ### Rank-Rank Slope
 
@@ -151,9 +148,6 @@ The Rank-Rank slope from the replication data provided by @DVN/NALG3E_2022 is sp
 ### Distances
 
 Distances are calculated using great circles and the haversine formula. In simple terms, the distance between centroids are "as the crow flies" and does not take into account driving distance. This is calculated using `geosphere` package and the `geosphere::distHaversine()` function [@geospherecite].
-
-
-{{< pagebreak >}}
 
 # Results
 
@@ -184,29 +178,31 @@ The `fixest` package and specifically the `fixest::feols()` function are used fo
    \end{tabular}
 \end{table}
 
-As shown in Table 1, we can reject the null hypothesis, as there is strong evidence that a $1\%$ increase in distance from the most populous county will result in a decrease of $0.172$ of the rank-rank slope with a high level of significance with $\alpha=0.001$.  This indicates that proximity to the most populous county and thus proximity to the most urban area of a CSA has a positive effect on intergenerational mobility.
+As shown in Table 1, we can reject the null hypothesis. There is strong evidence that a $1\%$ increase in distance from the most populous county will result in a decrease of $0.172$ of the rank-rank slope and thus a decrease in intergenerational mobility with a high level of significance with $\alpha=0.001$. This indicates that proximity to the most population dense county and thus proximity to the most urban area of a CSA has a positive effect on intergenerational mobility.
 
 ## Limitations and Future Directions
 
-This essay serves as a starting point for the effects of proximity to urban areas and intergenerational mobility. There is still more analysis to undertake. One fairly obvious limitation is how distance was calculated, the distances were calculated using great circles as opposed to actual drive time. There is likely some omitted variable bias for condition of road infrastructure. If road networks are more robust between counties this may have some effect on the results. Analysis can also be conducted so see this effect over time.
+This essay serves as a starting point for the effects of proximity to urban areas and intergenerational mobility. There is still more analysis to undertake. One fairly obvious limitation is how distance was calculated, the distances were calculated using great circles as opposed to actual drive time. There is likely some omitted variable bias for condition of road infrastructure. If road networks are more robust between counties this may have some effect on the results. Data could be collected on drive times between rural communities and urban centers and distances could be recalculated.
 
-There is also a question on how significant of an effect this covariate would have in the overall model proposed by @chetty_lop. I also make no assertion of a causal relationship, I only submit that there is evidence of a corollary.
+Time series analysis can also be conducted so see how this effect has changed over time. A longitudinal study would be needed and significant amounts of data would have to be compiled to replicate the @chetty_lop results in order to achieve this. As it stands the data available is limited.
 
-## Policy Recommendations
+There is a question on how significant of an effect this covariate would have in the overall model proposed by @chetty_lop. It should be a simple matter to test this covariate by adding it to the @chetty_lop model. I also make no assertion of a causal relationship, I only submit that there is evidence of a corollary.
 
-There is significant inequality of opportunity in rural areas as opposed to urban centers. At the same time there is significant inequality of *result* in urban areas, whereas in rural areas income inequality is far less pronounced. This is well supported by the literature and the empirical analysis conducted for this paper adds to that support.
-
-With the rise of WFH and if the trend indicated by @bloom and @mckinsey2021future holds, public investment in education in rural areas may see a greater return on investment than the work by @ahsan2020rural may suggest, at least in the long-run. It is also entirely possible that the benefits of a completely online University education could play a part as well [^onledu]. Significant public investment in K-12 education in rural areas, albeit without the economy of scale benefits enjoyed within urban areas could bear fruit, especially considering the work done by @ahsan2020rural. Public investment in online education is also a strong option for both secondary and tertiary levels. Adoption of the online education format could also benefit the next generation of workers who may find that their jobs are done in the same fashion, especially in higher paying fields.
-
-An argument that those in rural areas should simply move closer to a city lacks merit and is not a serious solution to intergenerational mobility in rural areas. For starters, it ignores the costs of moving away from family and into an area with greater income inequality to start with. Transplants would also be competing with those that are accustomed to life in an urban setting perhaps contributing to even greater income inequality in urban areas. In addition this further drains who are perhaps the more talented individuals away from rural communities exacerbating the lack of investment and opportunity in those areas further. On the other hand, it may remain attractive to policymakers at the state and federal levels to encourage movement into cities so public investment dollars can benefit from economies of scale. Municipal policymakers would likely balk at this proposition, however, as the demand for low skilled work continues to wane.
-
-[^onledu]: Author's note - I am completing my university education, to include graduate education, fully online as of this writing. While there are universities accessible to me, this format is far more convenient for balancing the coursework with family and career responsibilities.
-
-## Conclusion
+# Conclusion
 
 Overall, it would appear that proximity to an urban area does positively correlate to relative mobility. This is supported by the high degree of significance in the regression. There are undoubtedly more opportunities for income advancement in urban centers as opposed to rural areas. In addition to being highly intuitive, the literature strongly support this assertion.
 
-I would be remiss if I didn't make clear that there is likely not a pareto-efficient solution to this gradient. Rural investment does not benefit from economies of scale in the same manner as urban areas. However, the efficacy of investing in K-12 education and in particular online education would make for relevant further research. 
+I would be remiss if I didn't make clear that there is likely not a pareto-efficient solution to this gradient. Rural investment does not benefit from economies of scale in the same manner as urban areas. However, the efficacy of investing in K-12 education and in particular online education would make for relevant further research.
+
+## Policy Recommendations
+
+There is significant inequality of opportunity in rural areas as opposed to urban centers. Conversely, there is significant inequality of *result* in urban areas, whereas in rural areas income inequality is far less pronounced. This is well supported by the literature and the empirical analysis conducted for this paper adds to that support.
+
+With the rise of WFH and if the trend indicated by @bloom and @mckinsey2021future holds, public investment in education in rural areas may see a greater return on investment than the work by @ahsan2020rural may suggest, at least in the long-run. It is also entirely possible that the benefits of a completely online University education could play a part as well [^4]. Significant public investment in K-12 education in rural areas, albeit without the economy of scale benefits enjoyed within urban areas could bear fruit, especially considering the work done by @ahsan2020rural. Public investment in online education is also a strong option for both secondary and tertiary levels. Adoption of the online education format could also benefit the next generation of workers who may find that their jobs are done in the same fashion in the form of WFH, especially in higher paying fields.
+
+[^4]: Author's note - I am completing my university education, to include graduate education, fully online as of this writing. While there are universities accessible to me, this format is far more convenient for balancing the coursework with family and career responsibilities.
+
+An argument that those in rural areas should simply move closer to a city lacks merit and is not a serious solution to intergenerational mobility in rural areas. For starters, it ignores the costs of moving away from family and into an area with greater income inequality to start with. Transplants would also be competing with those that are accustomed to life in an urban setting perhaps contributing to even greater income inequality in urban areas. In addition this further drains who are perhaps the more talented individuals away from rural communities exacerbating the lack of investment and opportunity in those areas further. On the other hand, it may remain attractive to policymakers at the state and federal levels to encourage movement into cities so public investment dollars can benefit from economies of scale. Municipal policymakers would likely balk at this proposition, however, as the demand for low skilled work continues to wane.
 
 {{< pagebreak >}}
 
@@ -223,11 +219,15 @@ I would be remiss if I didn't make clear that there is likely not a pareto-effic
 
 ## Data
 
-All data files that were imported as csv files and the clean data file used in analysis are available on GitHub [@github-repo] [^datas]
+All data files that were imported as csv files and the clean data file used in analysis are available on GitHub [@github-repo] [^5]
+
+[^5]: https://github.com/dasneddon/IGM
 
 ## R Code
 
-The R script used for this project is also available on GitHub [@SneddonIGMR] [^rscript]
+The R script used for this project is also available on GitHub [@SneddonIGMR] [^6]
+
+[^6]: https://github.com/dasneddon/IGM/blob/main/IGM.R
 
 ### Packages Used
 
@@ -249,9 +249,3 @@ This paper was written and formatted using apaquarto [@apaquartocite] and Quarto
 ```{r}
 cat(readLines("IGM.R"), sep="\n")
 ```
-
-[^rscript]: https://github.com/dasneddon/IGM/blob/main/IGM.R
-[^datas]: https://github.com/dasneddon/IGM
-
-
-
