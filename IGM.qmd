@@ -38,7 +38,7 @@ format:
     nocorrespondence: true
     course: "ECON 545: Urban Economics"
     professor: "Dr. Rex Sitti"
-    duedate: December 1, 2024
+    duedate: December 8, 2024
     suppress-abstract: true
     suppress-short-title: true
     suppress-author-note: true
