@@ -50,6 +50,7 @@ header-insert: |
   \definecolor{JournalBlue}{RGB}{0, 0, 0} 
   \usepackage{setspace}
   \doublespacing
+  \usepackage{float}
 ---
 
 # Introduction
@@ -149,13 +150,13 @@ The Rank-Rank slope from the replication data provided by @DVN/NALG3E_2022 is sp
 
 Distances are calculated using great circles and the haversine formula. In simple terms, the distance between centroids are "as the crow flies" and does not take into account driving distance. This is calculated using `geosphere` package and the `geosphere::distHaversine()` function [@geospherecite].
 
+
 # Results
 
 ## Regression
 
-The `fixest` package and specifically the `fixest::feols()` function are used for the regression. Standard errors are robust to heteroscedasticity. Fixed effects for the densest counties within a CSA are chosen primarily to account for the variance in intergenerational mobility by region indicated in @connorstorper.
-
-\begin{table}[htbp]
+```{=latex}
+\begin{table}[H]
    \caption{Fixed-effects regression using inverse hyperbolic sine of distance from most population dense county in a CSA predicting the Rank-Rank Slope and thus the intergenerational mobility of a county.}
    \centering
    \begin{tabular}{lc}
@@ -176,9 +177,14 @@ The `fixest` package and specifically the `fixest::feols()` function are used fo
       \multicolumn{2}{l}{\emph{Heteroscedasticity-robust standard-errors}}\\
       \multicolumn{2}{l}{\emph{Significance: $\alpha=0.001$}}\\
    \end{tabular}
+   \label{table1}
 \end{table}
+```
+
+The `fixest` package and specifically the `fixest::feols()` function are used for the regression. Standard errors are robust to heteroscedasticity. Fixed effects for the densest counties within a CSA are chosen primarily to account for the variance in intergenerational mobility by region indicated in @connorstorper.\
 
 As shown in Table 1, we can reject the null hypothesis. There is strong evidence that a $1\%$ increase in distance from the most populous county will result in a decrease of $0.172$ of the rank-rank slope and thus a decrease in intergenerational mobility with a high level of significance with $\alpha=0.001$. This indicates that proximity to the most population dense county and thus proximity to the most urban area of a CSA has a positive effect on intergenerational mobility.
+
 
 ## Limitations and Future Directions
 
@@ -198,7 +204,7 @@ I would be remiss if I didn't make clear that there is likely not a pareto-effic
 
 There is significant inequality of opportunity in rural areas as opposed to urban centers. Conversely, there is significant inequality of *result* in urban areas, whereas in rural areas income inequality is far less pronounced. This is well supported by the literature and the empirical analysis conducted for this paper adds to that support.
 
-With the rise of WFH, and if the trend indicated by @bloom and @mckinsey2021future holds, public investment in education in rural areas may see a greater return on investment than the work by @ahsan2020rural may suggest, at least in the long-run. It is also entirely possible that the benefits of a completely online University education could play a part as well [^4]. Significant public investment in K-12 education in rural areas, albeit without the economy of scale benefits enjoyed within urban areas could bear fruit, especially considering the work done by @ahsan2020rural. Public investment in online education is also a strong option for both secondary and tertiary levels. Adoption of the online education format could also benefit the next generation of workers who may find that their jobs are done in the same fashion in the form of WFH, especially in higher paying fields.
+With the rise of WFH, and if the trend indicated by @bloom and @mckinsey2021future holds, public investment in education in rural areas may see a greater return on investment, at least in the long-run. It is also entirely possible that the benefits of a completely online University education could play a part as well [^4]. Significant public investment in K-12 education in rural areas, albeit without the economy of scale benefits enjoyed within urban areas could bear fruit, especially considering the work done by @ahsan2020rural. Public investment in online education is also a strong option for both secondary and tertiary levels. Adoption of the online education format could also benefit the next generation of workers who may find that their jobs are done in the same fashion in the form of WFH, especially in higher paying fields.
 
 [^4]: Author's note - I am completing my university education, to include graduate education, fully online as of this writing. While there are universities accessible to me, this format is far more convenient for balancing the coursework with family and career responsibilities.
 
